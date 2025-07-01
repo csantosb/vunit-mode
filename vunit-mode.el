@@ -312,7 +312,7 @@ If none were selected start new selection."
 
 (defun vunit--format-call-string (param)
   "Format the VUnit call-string with `PARAM'."
-  (format "%s%s %s %s --output-path %s --no-color --num-threads %d %s"
+  (format "%s%s %s %s --output-path %s --num-threads %d %s"
           (if vunit-simulator (concat "VUNIT_SIMULATOR=" vunit-simulator " ") "")
           vunit-python-executable
           (vunit--run-script-path)
